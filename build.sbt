@@ -2,6 +2,12 @@ name := """hidakkason2016"""
 
 version := "1.0-SNAPSHOT"
 
+import com.github.play2war.plugin._
+
+Play2WarPlugin.play2WarSettings
+
+Play2WarKeys.servletVersion := "3.1"
+
 lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.11.7"

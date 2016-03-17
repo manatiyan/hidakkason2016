@@ -13,4 +13,8 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 GET     /get                        controllers.GetTemplateController.index
-POST    /get/sayHello/{name}         controllers.GetTemplateController.sayHello
+# POST    /get/sayHello               controllers.TestController.sayHello
+POST    /get/messages               controllers.TestController.getMessages
+
+
+GET     /getInfo                        controllers.GetController.getInfo
